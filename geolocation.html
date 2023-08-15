@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Geolocation Visualization</title>
+    <style>
+        #mapContainer {
+            position: relative;
+        }
+        
+        #bingMapsControl {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1700px; 
+            height: 700px;
+        }
+        
+        #mapCanvas {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1><b><u>"A CITY EXPLORATION WEB APPLICATION"</u> </b></h1>
+    <p>It allows users to visualize their current location on a map and explore nearby points of interest. The application uses the Canvas and Bing Maps API for map display and integrates geolocation to provide an interactive experience.</p>
+    <button id="getLocationButton">Get My Location</button>
+    <br>
+    <br>
+    <script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?key=AirnGsbLWdX0XyZu8CzEEG5hB_X78sExc19nTp4Vj3pcpwDz6cCONDGZiodXJFKJ"></script>
+    <script src="script.js"></script>
+    <div id="mapContainer">
+        <canvas id="mapCanvas"></canvas>
+        <div id="bingMapsControl"></div>
+    </div >
+    <div class="container">
+    
+</body>
+</html>
